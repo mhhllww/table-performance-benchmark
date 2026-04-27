@@ -1,0 +1,52 @@
+:root {
+  --row-height: 52px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.app-toolbar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-fps {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  color: #555;
+}
+
+.app-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.table-placeholder {
+  padding: 16px;
+  font-family: system-ui, sans-serif;
+}
+
+.ant-table-tbody > tr > td,
+.ant-table-thead > tr > th {
+  height: var(--row-height) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ag-row {
+  height: var(--row-height) !important;
+}
